@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		td { text-align:center; }
+		tr:nth-child(2n) td { background:yellow; }
+		.tb { width:900px; margin:10px auto; }			
+		</style>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<h2>테이블 관련 태그</h2>
+		<table border="1" class="tb">
+			<caption>
+				<h3>그린컴퓨터아카데미 성적표</h3>
+				<span>프로토타입 제작 및 사용성 테스트</span>
+			</caption>
+			<thead>
+				<tr>
+					<th>순번</th><th>이름</th><th>점수</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td><td>강미란</td><td>80</td>
+				</tr>
+				<tr>
+					<td>2</td><td>고미란</td><td>70</td>
+				</tr>
+				<tr>
+					<td>3</td><td>공미란</td><td>90</td>
+				</tr>
+				<tr>
+					<td>4</td><td>곽미란</td><td>60</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td rowspan="2">통계</td><td>총점</td><td>300</td>
+				</tr>
+				<tr>
+					<td>평균</td><td>75</td>
+				</tr>
+				<tr>
+					<td colspan="3">모두 합격하셨습니다.</td>	
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

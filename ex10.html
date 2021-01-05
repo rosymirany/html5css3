@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html land="ko">
+	<head>
+		<title>폼 요소3</title>
+		<meta charset="utf-8">
+		<style></style>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<form method="POST" action="">
+			<fieldset>
+				<legend>HTML5에서 추가된 폼 요소 정보</legend>
+				<input type="search" name="keyword" id="keyword" autocomplete><br><br>
+				<input type="tel" name="tel" id="tel" pattern="\d{3}-\d{3,4}-\d{4}"><br><br>	
+				<input type="email" name="email" id="email" multiple="multiple"><br><br>
+				<input type="number" min="0" max="100" step="5" name="num" id="num"><br><br>
+				<input type="range" min"-200" max="200" name="slider" id="slider"><br><br>
+				<input type="color" name="color" id="color"><br><br>
+				<input type="date" name="calendar" id="calendar"><br><br>
+				<input type="time" name="calendar2" id="calendar2"><br><br>
+				<input type="month" name="calendar3" id="calendar3"><br><br>
+				<input type="week" name="calendar4" id="calendar4"><br><br>
+				<details id="sel">
+					<summary>내가 좋아하는 사람들 (더보기)</summary>
+					<ul>
+						<li>전정국</li>
+						<li>정국전</li>
+						<li>국전정</li>
+					</ul>
+				</details>
+			</fieldset><br>
+			<input type="submit">
+		</form>
+	</body>
+</html>

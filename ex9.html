@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>폼 요소2</title>
+		<meta charset="utf-8">
+		<style></style>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<form method="POST" action="join_pro.php">
+		<fieldset>
+			<legend>기본 정보</legend>
+			<label for="uid">아이디</labe> :
+			<input type="text" name="uid" id="uid" size="8" maxlength="10" value="" placeholder="아이디입력" required autofocus title="아이디를 입력하삼">
+			<button>중복확인</button><br><br>
+			<label for="upw">비밀번호 : </label>
+			<input type="password" name="upw" id="upw" placeholder="비밀번호 입력"><br><br>
+			<label for="upw2">비밀번호 확인</label> :
+			<input type="password" name="upw2" id="upw2" placeholder="비밀번호 입력" title="비밀번호를 한 번 더 입력해주세요"><br><br>
+			<!-- placeholder readonly disabled -->
+			<label for="name">이름</label> :
+			<input type="text" name="name" id="name" placeholder="이름 입력"><br><br>
+			<label for="email1">이메일 : </label>
+			<input type="text" name="email1" id="email1">
+			@
+			<select name="email2" id="email2">
+				<option value="naver.com">네이버</option>
+				<option value="daum.net">다음</option>
+				<option value="gmail.com">구글</option>
+			</select><br><br>
+			<label for="pic">사진</label>
+			<input type="file" accept=".jpg, .png, .gif" value="사진첨부" name="pic" id="pic"><br><br>
+			<label>성별</label>&nbsp;
+			<input type="radio" name="sex" id="ra1" checked>
+			<label for="ra1">여</label>
+			<input type="radio" name="sex" id="ra2">
+			<label for="ra2">남</label>
+		</fieldset>
+		<fieldset>
+			<legend>추가 정보</legend>
+			<label for="">취미</label>&nbsp;
+			<input type="checkbox" name="ch1" id="ch1" checked>
+			<label for="ch1">독서</label>&nbsp;
+			<input type="checkbox" name="ch2" id="ch2">
+			<label for="ch2">영화감상</label>&nbsp;
+			<input type="checkbox" name="ch3" id="ch3">
+			<label for="ch3">사이클링</label>&nbsp;
+			<input type="checkbox" name="ch4" id="ch4">
+			<label for="ch4">음악감상</label>
+			<input type="checkbox" name="ch5" id="ch5">
+			<label for="ch5">등산</label>
+			<input type="checkbox" name="ch6" id="ch6">
+			<label for="ch6">낚시</label><br><br>
+			<label for="memo">하고 싶은 말</label><br>
+			<textarea rows="10" cols="50" id="memo"></textarea>
+		</fieldset>
+		<fieldset>
+			<input type="submit" value="가입하기">&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" value="미리보기">&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="reset" value="취소">&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="image" src="btn1.jpg" width="50" height="50">
+		</fieldset>
+		</form>
+	</body>
+</html>

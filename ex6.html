@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<style>
+		</style>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<h2>미디어 관련 요소2 - srcset과 source</h2>
+		<!-- 크로스 미디어를 위한 img의 삽입 -->
+		<img srcset ="elva-fairy-320w.jpg 320w,
+			elva-fairy-480w.jpg 480w,
+			elva-fairy-800w.jpg 800w"
+		     sizes="(max-width: 320px) 280px,
+		             (max-width: 480px) 440px, 800px"
+		     src="elva-fairy-800w.jpg" alt="방탄소년단"> 
+		<!-- 크로스 브라우징을 위한 video, audio의 source 요소의 삽입 -->
+		<audio loop controls>
+			<source src="bts01.mp3" type="audio/mp3">
+			<source src="bts01.ogg" type="audio/ogg">
+			<source src="bts01.wav" type="audio/wav">
+		</audio>
+		<video loop controls muted poster="japan.jpg">
+			현재 브라우저에서 지원하지 않는 형식입니다.
+			<source src="bts01.mp4" type="video/mp4">
+			<source src="bts01.ogv" type="video/ogg">
+			<source src="bts01.webm" type="video/webm">		
+		</video>
+	</body>
+</html>
